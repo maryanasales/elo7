@@ -1,0 +1,205 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, .btn, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  color: #7d7d7d;
+  line-height: 1.6em;
+  font-family: "Cabin", sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: auto;
+}
+
+.section, .cultura, .equipe, .hero {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.title, .vagas h3, .cultura-grid h3, h2 {
+  color: #555;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+a, .btn {
+  color: #008489;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover, .btn:hover, a:focus, .btn:focus, a:active, .btn:active {
+  color: #005356;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 1.3em;
+}
+.btn:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #ccc;
+}
+
+.header {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  background-image: url(/assets/images/foto-header.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.header h1 {
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1em;
+  text-align: center;
+  text-shadow: 1px 1px 5px black;
+}
+@media screen and (min-width: 880px) {
+  .header {
+    padding-top: 65vh;
+    padding-bottom: 30vh;
+  }
+  .header h1 {
+    font-size: 3.8em;
+  }
+}
+
+.hero {
+  text-align: center;
+}
+
+.equipe {
+  background-color: #f2f2f2;
+}
+@media screen and (min-width: 880px) {
+  .equipe-ceo {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.equipe-ceo img {
+  width: 100%;
+}
+.equipe-ceo h2 {
+  text-align: left;
+  margin: 0;
+}
+.equipe-ceo h3 {
+  color: #fdb933;
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+.equipe-time {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 480px) {
+  .equipe-time {
+    justify-content: center;
+    grid-gap: 15px;
+  }
+}
+
+.cultura {
+  text-align: center;
+}
+.cultura-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: justify;
+}
+.cultura-grid img {
+  display: block;
+  margin: auto;
+}
+.cultura-grid h3 {
+  font-size: 1em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.img-rodape {
+  width: 100%;
+}
+
+.vagas h3 {
+  text-align: left;
+}
+.vagas-lista {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.vagas-lista li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}

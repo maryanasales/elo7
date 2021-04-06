@@ -1,0 +1,150 @@
+@import reset
+
+$spacing: 30px
+$brand-color: #fdb933
+$secondary-color: #008489
+$grey-color: #ccc
+
+.wrapper
+    max-width: 1100px
+    padding-left: $spacing
+    padding-right: $spacing
+    margin: auto
+
+.section
+    padding-top: $spacing
+    padding-bottom: $spacing
+
+.title
+    color: #555
+    font-weight: bold 
+    text-transform: uppercase
+    text-align: center
+
+h2
+    @extend .title
+    font-size: 1.2em
+    margin-top: $spacing
+    margin-bottom: $spacing
+
+a 
+    color: $secondary-color
+    font-size: 1.1em
+    font-weight: bold
+    text-decoration: none
+
+    &:hover, &:focus, &:active
+        color: darken($secondary-color, 10%)
+
+.btn
+    @extend a
+    display: inline-block
+    margin-top: $spacing / 2
+    font-size: 1.3em
+    
+    &:before 
+        content: ''
+        display: block
+        width: 100%
+        height: 1px
+        margin-top: $spacing / 2
+        margin-bottom: $spacing / 2
+        background-color: $grey-color
+
+.header    
+    padding-top: 20vh
+    padding-bottom: 20vh
+    background: 
+        image: url(/assets/images/foto-header.png)
+        repeat: no-repeat
+        position: center center
+        size: cover
+
+    h1 
+        color: #fff
+        font-size: 3em
+        font-weight: bold
+        line-height: 1em
+        text-align: center
+        text-shadow: 1px 1px 5px black
+
+    @media screen and (min-width: 880px)
+        padding-top: 65vh
+        padding-bottom: 30vh
+
+        h1 
+            font-size: 3.8em    
+
+.hero
+    @extend .section
+    text-align: center
+
+.equipe
+    @extend .section
+    background-color: lighten($grey-color, 15%)
+
+    &-ceo 
+        @media screen and (min-width: 880px)
+            display: grid 
+            grid-gap: $spacing
+            grid-template-columns: repeat(2, 1fr)
+
+        img 
+            width: 100%
+
+        h2
+            text-align: left 
+            margin: 0
+        
+        h3 
+            color: $brand-color 
+            font-size: 1.2em
+            font-style: italic
+            margin-bottom: $spacing
+
+    &-time
+        display: flex 
+        flex-wrap: wrap
+        justify-content: space-between
+
+        @media screen and (max-width: 480px)
+            justify-content: center 
+            grid-gap: $spacing / 2
+
+.cultura
+    @extend .section
+    text-align: center
+
+    &-grid
+        display: grid        
+        grid-gap: $spacing
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+        text-align: justify
+
+        img 
+            display: block
+            margin: auto
+
+        h3
+            @extend .title
+            font-size: 1em
+            margin-top: $spacing / 2
+            margin-bottom: $spacing / 2
+
+.img-rodape
+    width: 100%
+
+.vagas
+    h3 
+        @extend .title
+        text-align: left
+
+    &-lista
+        margin-top: $spacing
+        margin-bottom: $spacing
+        li 
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            margin-bottom: $spacing / 2
+            font-size: 1.2em
