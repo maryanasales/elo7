@@ -104,7 +104,7 @@ a:hover, .btn:hover, a:focus, .btn:focus, a:active, .btn:active {
 .header {
   padding-top: 20vh;
   padding-bottom: 20vh;
-  background-image: url(assets/images/foto-header.png);
+  background-image: url(../images/foto-header.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
